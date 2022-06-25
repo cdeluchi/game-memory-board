@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/brain.jpg);
+}
+.wrapperCard {
+  background-color: rgb(218, 194, 224);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 800px;
+  height: 100vh;
+  margin: 10px auto;
+}
+
+.card {
+  position: relative;
+  margin: 20px;
+  width: 160px;
+  height: 150px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  transition: all 400ms ease;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.front {
+  background-image: url("../assets/DOOR_1.png");
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+}
+.back {
+  background-image: url("../assets/brain.jpg");
+  background-size: cover;
+  background-position: center;
+}
